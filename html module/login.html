@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="cnt1">
+        <h1>Login Form</h1>
+        <form action="/auth" method="post">
+            <input type="text" name="username" id="username" placeholder="username">
+            <input type="password" name="password" id="password" placeholder="password">
+            <label for="role">Choose Role : </label>
+            <input type="radio" name="role" id="admin">
+            <label for="role">admin</label>
+            <input type="radio" name="role" id="instructor">
+            <label for="role">instructor</label>
+            <input type="radio" name="role" id="student">
+            <label for="role">student</label>
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have account? <span><a href="/sign">Signin</a></span></p>
+    </div>
+</body>
+
+</html>
